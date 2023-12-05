@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signupactivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal" />
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColorHint="#FAF6F6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/signupetemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#F8F3F3"
+            app:layout_constraintEnd_toEndOf="@+id/etusername"
+            app:layout_constraintStart_toStartOf="@+id/etusername"
+            app:layout_constraintTop_toBottomOf="@+id/etusername" />
+
+        <EditText
+            android:id="@+id/signupetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#EDE7E7"
+            app:layout_constraintEnd_toEndOf="@+id/signupetemail"
+            app:layout_constraintStart_toStartOf="@+id/signupetemail"
+            app:layout_constraintTop_toBottomOf="@+id/signupetemail" />
+
+        <TextView
+            android:id="@+id/signintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Already have account"
+            android:textColor="#4554A6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/signupetpassword"
+            app:layout_constraintTop_toBottomOf="@+id/signupetpassword" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:text="Sign Up"
+            app:cornerRadius="-5dp"
+            app:layout_constraintEnd_toEndOf="@+id/signupetpassword"
+            app:layout_constraintStart_toStartOf="@+id/signupetpassword"
+            app:layout_constraintTop_toBottomOf="@+id/signupetpassword" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/btnsignup"
+            app:layout_constraintStart_toStartOf="@+id/btnsignup"
+            app:layout_constraintTop_toBottomOf="@+id/btnsignup">
+
+            <Button
+                android:id="@+id/btngooglesignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+
+                android:text="Google"
+                app:cornerRadius="-5dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

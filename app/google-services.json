@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890651970835",
+    "project_id": "servicebook-c1cb0",
+    "storage_bucket": "servicebook-c1cb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890651970835:android:f89936b6af94c37bd79ee6",
+        "android_client_info": {
+          "package_name": "com.example.servicebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMAsEzJ4eYQhu5Nl5Ew96YbswoUqmSqqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
