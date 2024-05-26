@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            app:srcCompat="@drawable/baseline_login_24" />
 
         <EditText
             android:id="@+id/signinetemail"
@@ -67,6 +67,7 @@
             android:layout_width="210dp"
             android:layout_height="50dp"
             android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Sign In"
             app:cornerRadius="-5dp"
             app:layout_constraintEnd_toEndOf="@+id/signinetpassword"
@@ -87,25 +88,14 @@
                 android:id="@+id/btngooglesignin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginRight="5dp"
+                android:layout_weight="1"
 
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Google"
                 app:cornerRadius="-5dp" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/signinnumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Sign up with number"
-            android:textColor="#0F1B02"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

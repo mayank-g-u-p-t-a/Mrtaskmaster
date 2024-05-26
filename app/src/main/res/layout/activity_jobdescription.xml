@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_background"
+
+    app:layout_anchorGravity="center"
     tools:context=".jobdescription">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/descbg"
+    android:alpha="0.5"
+    android:scaleType="centerCrop"
+    android:src="@drawable/lightbg"
+    ></ImageView>
 
     <TextView
         android:id="@+id/textView3"
@@ -15,7 +24,7 @@
         android:gravity="center"
         android:text="TextView"
         android:textSize="34sp"
-        android:textStyle="normal|bold"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,9 +33,15 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="24dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
         android:text="TextView"
+        android:textColor="#000000"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:shadowColor="#C0CCCD"
         android:text="Proceed Further"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -23,7 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal" />
+            app:srcCompat="@drawable/baseline_arrow_circle_up_24" />
 
         <EditText
             android:id="@+id/etusername"
@@ -33,7 +33,7 @@
             android:ems="10"
             android:hint="Username"
             android:inputType="text"
-            android:textColorHint="#FAF6F6"
+            android:textColorHint="#070707"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -46,7 +46,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColorHint="#F8F3F3"
+            android:textColorHint="#0E0E0E"
             app:layout_constraintEnd_toEndOf="@+id/etusername"
             app:layout_constraintStart_toStartOf="@+id/etusername"
             app:layout_constraintTop_toBottomOf="@+id/etusername" />
@@ -59,7 +59,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="#EDE7E7"
+            android:textColorHint="#0E0E0E"
             app:layout_constraintEnd_toEndOf="@+id/signupetemail"
             app:layout_constraintStart_toStartOf="@+id/signupetemail"
             app:layout_constraintTop_toBottomOf="@+id/signupetemail" />
@@ -80,6 +80,7 @@
             android:layout_width="210dp"
             android:layout_height="50dp"
             android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Sign Up"
             app:cornerRadius="-5dp"
             app:layout_constraintEnd_toEndOf="@+id/signupetpassword"
@@ -100,9 +101,10 @@
                 android:id="@+id/btngooglesignup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginRight="5dp"
+                android:layout_weight="1"
 
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Google"
                 app:cornerRadius="-5dp" />
 

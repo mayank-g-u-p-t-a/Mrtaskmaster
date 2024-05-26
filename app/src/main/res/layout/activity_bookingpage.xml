@@ -11,7 +11,7 @@
         android:layout_width="124dp"
         android:layout_height="156dp"
         android:layout_marginTop="16dp"
-        android:src="@android:drawable/ic_notification_overlay"
+        android:src="@drawable/baseline_person_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -147,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Book" />
     </LinearLayout>
 

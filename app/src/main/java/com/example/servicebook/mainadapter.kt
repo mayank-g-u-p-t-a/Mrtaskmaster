@@ -12,7 +12,7 @@ class mainadapter(var arra:ArrayList<users>):RecyclerView.Adapter<mainadapter.vi
     class viewholder(itemview: View):RecyclerView.ViewHolder(itemview) {
 val image=itemview.findViewById<ImageView>(R.id.imageView3)
         val servicename=itemview.findViewById<TextView>(R.id.textView)
-val desc=itemview.findViewById<TextView>(R.id.textView2)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewholder {
@@ -28,12 +28,15 @@ return viewholder(lay)
 var main=arra[position]
 
         holder.servicename.setText(main.job)
-        holder.desc.setText(main.Desc)
+        holder.image.setImageResource(main.profile)
+
         holder.itemView.setOnClickListener{
 val i= Intent(holder.itemView.context,jobdescription::class.java)
         i.putExtra("jobname",main.job)
             i.putExtra("jobdesc",main.Desc)
             i.putExtra("profilepic",main.profile)
+            i.putExtra("loc",main.location)
+
 holder.itemView.context.startActivity(i)
         }
 

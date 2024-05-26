@@ -28,9 +28,10 @@ class aspadapter(val arra:ArrayList<asapmodel>):RecyclerView.Adapter<aspadapter.
 
     override fun onBindViewHolder(holder: viewholder, position: Int) {
         val main=arra[position]
-        holder.img.setImageResource(main.pp)
+        holder.img.setImageResource(R.drawable.baseline_person_24)
         holder.empname.setText(main.name)
         holder.empprice.setText(main.price)
+
         holder.btn.setOnClickListener {
             val i =Intent(holder.itemView.context,Bookingpage::class.java)
             i.putExtra("name",main.name)

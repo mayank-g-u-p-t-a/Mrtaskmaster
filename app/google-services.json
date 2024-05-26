@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "890651970835",
+    "firebase_url": "https://servicebook-c1cb0-default-rtdb.firebaseio.com",
     "project_id": "servicebook-c1cb0",
     "storage_bucket": "servicebook-c1cb0.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.servicebook"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "890651970835-rcbs5n0g9oeuc946582b97h5d3gapjbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servicebook",
+            "certificate_hash": "b261e93900c1bcd5b10ccf68f3ae60219279f510"
+          }
+        },
+        {
+          "client_id": "890651970835-uv5eqef164jf93upehkhaivardqactv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAMAsEzJ4eYQhu5Nl5Ew96YbswoUqmSqqs"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890651970835-uv5eqef164jf93upehkhaivardqactv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

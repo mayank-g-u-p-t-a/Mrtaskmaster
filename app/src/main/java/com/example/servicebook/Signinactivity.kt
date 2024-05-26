@@ -16,11 +16,12 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.FirebaseDatabase
 
 class Signinactivity : AppCompatActivity() {
+
     private lateinit var binding:ActivitySigninactivityBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var processdialog: ProgressDialog
     private lateinit var signInClient: GoogleSignInClient
-    private val RC_SIGN_IN=65
+    private val RC_SIGN_IN=66
 
     private lateinit var database: FirebaseDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,8 +37,9 @@ class Signinactivity : AppCompatActivity() {
         processdialog.setTitle("Logging in")
         processdialog.setMessage("We are trying to log you in")
         binding.signintext.setOnClickListener {
-            val i =Intent(this,Signupactivity::class.java)
+            val i=Intent(this,Signupactivity::class.java)
             startActivity(i)
+
         }
         binding.btnsignin.setOnClickListener{
             processdialog.show()
@@ -69,12 +71,14 @@ class Signinactivity : AppCompatActivity() {
         binding.btngooglesignin.setOnClickListener {
             signinwithgoogle()
         }
+
     }
     private fun signinwithgoogle() {
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestProfile()
             .requestEmail()
+
             .build()
         signInClient = GoogleSignIn.getClient(this, gso)
         val signInIntent = signInClient.signInIntent
@@ -93,11 +97,13 @@ class Signinactivity : AppCompatActivity() {
 
                 val account = task.getResult(ApiException::class.java)!!
 
-                Toast.makeText(this,"dfghjk,",Toast.LENGTH_SHORT).show()
+
                 val credentials=GoogleAuthProvider.getCredential(account.idToken,null)
 
                 auth.signInWithCredential(credentials).addOnCompleteListener(this) { task ->
+
                     if (task.isSuccessful) {
+                        Toast.makeText(this,"dfghjk,",Toast.LENGTH_SHORT).show()
                         // Sign in success
                         val user = FirebaseAuth.getInstance().currentUser
                         val i = Intent(this, MainActivity::class.java)
